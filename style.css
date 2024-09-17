@@ -1,0 +1,151 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: rgb(220, 220, 220);
+}
+
+.header-text {
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.page-container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-and-mess-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.register-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-container {
+    background-color: #e9ecef;
+    height: 40vh;
+    margin-bottom: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+
+.register-section input {
+    padding: 5px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.register-section input,
+button {
+    width: 50%;
+}
+
+input:focus {
+    outline: none;
+}
+
+.register-section button {
+    background-color: #292d31;
+    padding: 5px;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.register-section button:disabled {
+    background-color: grey;
+    color: white;
+    cursor: not-allowed;
+}
+
+.list-container p,
+li {
+    font-size: 1.2rem;
+}
+
+.list-container p {
+    text-align: center;
+}
+
+a {
+    font-size: 1.3rem;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+}
+
+nav {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#logout {
+    color: red;
+    cursor: pointer;
+}
+
+#logout:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#Welcome {
+    color: #292d31;
+}
+
+@media screen and (max-width: 600px) {
+    .register-container {
+        width: 90%;
+    }
+
+    .register-section input,
+    button {
+        width: 80%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        width: 50%;
+    }
+
+}
