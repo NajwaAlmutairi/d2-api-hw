@@ -18,8 +18,8 @@ fetch(url)
     .then((data) => {
         console.log(data)
         mydata = data;
-        console.log("mydata");
-        console.log(mydata);
+        // console.log("mydata");
+        // console.log(mydata);
     })
 
 
@@ -34,6 +34,7 @@ loginbtn.addEventListener('click', () => {
         console.log("login Successfully")
         login(logindata[0].id)
     } else {
+        logintext.innerText = "please try again!"
         console.log("please try again!")
     }
 })
@@ -43,7 +44,7 @@ function login(id) {
     fetch(url + '/' + id)
         .then((response) => response.json())
         .then((data) => {
-            console.log(data)
+            // console.log(data)
             localStorage.setItem('userId', data.id);
             window.location.href = 'home.html';
         })

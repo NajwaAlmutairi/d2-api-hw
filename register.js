@@ -35,7 +35,7 @@ function validateUsername() {
         isUsername = true;
     }
     enablebutton();
-    console.log('isUsername ', isUsername, 'isUserEmail', isUserEmail, 'isUserPassword ', isUserPassword);
+    // console.log('isUsername ', isUsername, 'isUserEmail', isUserEmail, 'isUserPassword ', isUserPassword);
 
 
 }
@@ -52,7 +52,7 @@ function validateEmail() {
 
     }
     enablebutton();
-    console.log('isUsername ', isUsername, 'isUserEmail', isUserEmail, 'isUserPassword ', isUserPassword);
+    // console.log('isUsername ', isUsername, 'isUserEmail', isUserEmail, 'isUserPassword ', isUserPassword);
 
 }
 
@@ -67,7 +67,7 @@ function validatePassword() {
     }
     enablebutton();
 
-    console.log('isUsername ', isUsername, 'isUserEmail', isUserEmail, 'isUserPassword ', isUserPassword);
+    // console.log('isUsername ', isUsername, 'isUserEmail', isUserEmail, 'isUserPassword ', isUserPassword);
 
 }
 
