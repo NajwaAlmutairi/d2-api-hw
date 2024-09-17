@@ -11,6 +11,8 @@ let mydata = [];
 if (localStorage.getItem('userId') !== null) {
     // If 'userId' exists, remove it from localStorage
     localStorage.removeItem('userId');
+    localStorage.removeItem('userName');
+
 }
 
 fetch(url)
@@ -18,8 +20,7 @@ fetch(url)
     .then((data) => {
         console.log(data)
         mydata = data;
-        // console.log("mydata");
-        // console.log(mydata);
+
     })
 
 
@@ -44,8 +45,8 @@ function login(id) {
     fetch(url + '/' + id)
         .then((response) => response.json())
         .then((data) => {
-            // console.log(data)
             localStorage.setItem('userId', data.id);
+            localStorage.setItem('userName', data.username);
             window.location.href = 'home.html';
         })
 }
